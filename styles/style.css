@@ -1,1 +1,66 @@
-/* место для вашего кода */
+.header {
+  display: flex;
+  align-items: center;
+  margin-top: 96px;
+  margin-bottom: 94px;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 1052px;
+height: 105px;
+}
+
+.header__logo-image {
+  height: 105px;
+  width: 130px;
+  margin-right: 194px;
+}
+
+.header__links-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: circle;
+  gap: 32px;
+  margin-left: 26.52px;
+  padding-right: 45.03px;
+}
+
+.header__link {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  color: #000;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link_underlined {
+  position: relative; /* Относительное позиционирование для родительского элемента ссылки */
+  text-decoration: none; /* Убираем стандартное подчеркивание */
+}
+
+.header__link_underlined::after {
+  content: ""; /* Псевдоэлементы требуют свойства content */
+  position: absolute; /* Позиционируем относительно родительского элемента */
+  left: 0; /* Начинаем с левого края ссылки */
+  bottom: -1px; /* Смещаем вниз относительно текста ссылки */
+  border-bottom: 1px solid #000; /* Тонкая черная линия внизу */
+  width: 100%; /* Ширина линии соответствует ширине текста */
+}
+.adress {
+  padding-right: 28px;
+}
+.header__address {
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 135%;
+  letter-spacing: 0.01em;
+  color: #000;
+ 
+}
