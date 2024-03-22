@@ -33,17 +33,17 @@
 }
 
 .header__link_underlined {
-  position: relative; /* Относительное позиционирование для родительского элемента ссылки */
-  text-decoration: none; /* Убираем стандартное подчеркивание */
+  position: relative; 
+  text-decoration: none; 
 }
 
 .header__link_underlined::after {
-  content: ""; /* Псевдоэлементы требуют свойства content */
-  position: absolute; /* Позиционируем относительно родительского элемента */
-  left: 0; /* Начинаем с левого края ссылки */
-  bottom: -1px; /* Смещаем вниз относительно текста ссылки */
-  border-bottom: 1px solid #000; /* Тонкая черная линия внизу */
-  width: 100%; /* Ширина линии соответствует ширине текста */
+  content: ""; 
+  position: absolute; 
+  left: 0; 
+  bottom: -1px; 
+  border-bottom: 1px solid #000; 
+  width: 100%; 
 }
 
 .header__logo-image {
