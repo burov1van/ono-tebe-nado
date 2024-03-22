@@ -289,7 +289,6 @@
 
 .about__text-margin {
   margin-top: 24px;
-
 }
 
 .footer {
@@ -298,7 +297,6 @@
   margin: 180px 50px 88px 50px;
 }
 
-
 .footer__menu-list {
   list-style: none;
   display: flex;
@@ -306,8 +304,6 @@
   align-items: center;
   font-size: 18px;
   padding-left: 30px;
-
- 
 }
 
 .footer__link {
@@ -315,14 +311,11 @@
   font-size: 18px;
   letter-spacing: 0.01em;
   color: #000;
-  
 }
 
 .footer__link_active {
   text-decoration: none;
 }
-
-
 
 .footer__social-list {
   display: flex;
