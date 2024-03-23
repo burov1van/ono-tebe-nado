@@ -3,9 +3,8 @@
   align-items: center;
   margin-top: 92px;
   margin-bottom: 96px;
-  margin-left: 24px;
-  margin-right: 24px;
-  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .header__links-list {
@@ -50,6 +49,7 @@
   height: 105px;
   width: 148px;
   margin-right: 184px;
+  display: block;
 }
 
 .adress {
@@ -80,10 +80,7 @@
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
@@ -186,27 +183,21 @@
   align-items: center;
   padding: 51px 40px 48px 40px;
   color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 160% auto;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 165% auto;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 160% auto;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 160% auto;
 }
 
 .card__title {
@@ -238,6 +229,22 @@
   font-weight: normal;
   line-height: 23.48px;
   text-align: left;
+  display: block;
+  max-width: max-content;
+}
+
+.lots__link_underlined {
+  position: relative;
+  text-decoration: none;
+}
+
+.lots__link_underlined::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  border-bottom: 1px solid #000;
+  width: 100%;
 }
 
 .about {
@@ -251,7 +258,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(1, 19, 19);
+  background-color: black;
   height: 240px;
   width: 240px;
   margin-bottom: 240px;
@@ -276,17 +283,14 @@
 }
 
 .about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   font-size: 20px;
   font-weight: normal;
   line-height: 24px;
   text-align: left;
-}
-.about__text-letter-space {
   letter-spacing: 0.04px;
-}
-
-.about__text-margin {
-  margin-top: 24px;
 }
 
 .footer {
@@ -311,6 +315,7 @@
 }
 
 .footer__link_underlined::after {
+  content: "";
   position: absolute;
   left: 0;
   bottom: -1px;
