@@ -1,26 +1,21 @@
 .header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  margin-top: 92px;
-  margin-bottom: 96px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-top: 92px;
+  padding-bottom: 96px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-
-
-
-
-
-
+.header_menu {
+  justify-self: start;
+}
 
 .header__links-list {
   display: flex;
-  justify-content: space-around;
+  gap: 32px;
   list-style: circle;
-  gap: 31.7px;
-  margin-left: 26.52px;
-  margin-right: 36px;
 }
 
 .header__link {
@@ -55,22 +50,16 @@
 .header__logo-image {
   height: 105px;
   width: 148px;
-  margin-right: 184px;
-  display: block;
 }
 
-.adress {
-  margin-right: 28px;
-}
-
-.header__address {
-  font-weight: normal;
-  font-size: 18px;
+.address {
   font-style: normal;
-  line-height: 135%;
-  letter-spacing: 0.01em;
-  color: #000;
-  text-decoration: none;
+  justify-self: flex-end;
+  max-width: 240.5px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.3px;
+  text-align: left;
 }
 
 .cover {
