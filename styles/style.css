@@ -246,7 +246,7 @@
 .about {
   display: grid;
   grid-template-columns: 334px auto;
-  margin: 150px 24px 181px 24px;
+  margin: 148px 24px 181px 24px;
   gap: 25px;
 }
 
