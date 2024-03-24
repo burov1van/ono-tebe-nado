@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  margin-top: 92px; 
-  margin-bottom: 92px; 
+  margin-top: 92px;
+  margin-bottom: 92px;
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -181,7 +181,7 @@
   color: #fff;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 160% auto;
+  background-size: 165% auto;
 }
 
 .card_type_film {
@@ -246,7 +246,7 @@
 .about {
   display: grid;
   grid-template-columns: 334px auto;
-  margin: 148px 24px 181px 24px;
+  margin: 150px 24px 181px 24px;
   gap: 25px;
 }
 
